@@ -1,0 +1,129 @@
+body {
+	color: bisque;
+}
+
+.js-weather-container {
+	position: absolute;
+	right: 1%;
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.5);
+	letter-spacing: 0.1em;
+	text-align: center;
+	border-radius: 30px;
+	padding: 15px 30px 15px 30px;
+}
+
+.js-weather-now {
+	text-align: center;
+	font-size: xx-large;
+}
+
+.js-weather-description {
+	position: relative;
+	bottom: 15px;
+}
+
+.js-date-container {
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+	padding: 15px 30px 15px 30px;
+}
+
+.js-date {
+	letter-spacing: 0.1em;
+	font-size: 24px;
+}
+
+.js-clock {
+	letter-spacing: 0.05em;
+	font-size: 80px;
+	padding: 5px 0;
+}
+
+.invisible {
+	display: none;
+}
+
+.task-container {
+	position: absolute;
+	top: 10%;
+	left: 1%;
+	width: 500px;
+	display: grid;
+
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 30px;
+	padding: 15px 30px 15px 30px;
+	grid-template-areas:
+		"header header"
+		"input input"
+		"pending finished"
+		"pList fList";
+
+	grid-column: 1 2;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 0fr 0fr 600px;
+}
+
+h1 {
+	grid-area: header;
+}
+
+.pending {
+	grid-area: pending;
+	justify-items: center;
+}
+
+.Finished {
+	grid-area: finished;
+}
+
+.taskForm {
+	grid-area: input;
+}
+
+.pList {
+	grid-area: pList;
+}
+
+.fList {
+	grid-area: fList;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.bgImg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	animation: fadeIn 0.5s linear;
+}
+
+li > button {
+	margin-left: 5px;
+}
+
+.js-form {
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+.taskInput {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}

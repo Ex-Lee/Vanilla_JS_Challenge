@@ -1,0 +1,10 @@
+{
+	"singleQuote": false,
+	"semi": true,
+	"useTabs": true,
+	"tabWidth": 4,
+	"trailingComma": "es5",
+	"printWidth": 80,
+	"prettier.javascriptEnable": ["javascript", "javascriptreact"],
+	"editor.formatOnSave": true
+}

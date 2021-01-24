@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vanilla_JS_Challenge</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="js-weather-container">
+			<div>
+				<img class="js-weatherIcon" />
+				<div class="js-weather-description">Loading...</div>
+			</div>
+			<div class="js-weather-now"></div>
+			<div class="js-weather-minmax"></div>
+		</div>
+		<div class="js-date-container">
+			<form class="js-form">
+				<input type="text" placeholder="이름을 입력해주세요" />
+				<label class="js-user invisible"></label>
+			</form>
+			<div class="js-date"></div>
+			<div class="js-clock"></div>
+		</div>
+
+		<div class="task-container">
+			<h1>Tasks</h1>
+			<form class="taskForm">
+				<input type="text " placeholder="Add Task" class="taskInput" />
+			</form>
+			<div class="Pending">
+				<h2>Pending</h2>
+			</div>
+			<ul class="pList"></ul>
+			<div class="Finished">
+				<h2>Finished</h2>
+			</div>
+			<ul class="fList"></ul>
+		</div>
+		<!-- <h1>Tasks</h1> -->
+
+		<!-- <form class="taskForm">
+			<input type="text " placeholder="Add Task" class="taskInput" />
+		</form> -->
+		<!-- <h2>Pending</h2> -->
+		<!-- <ul class="pList"></ul> -->
+
+		<!-- <h2>Finished</h2> -->
+		<!-- <ul class="fList"></ul> -->
+
+		<script src="clock.js"></script>
+		<script src="user.js"></script>
+		<script src="taskList.js"></script>
+		<script src="background.js"></script>
+		<script src="weather.js"></script>
+	</body>
+</html>
